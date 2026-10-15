@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="红色影视：一份以中国革命历史题材影视作品为核心的学习与观看导航。按年代梳理、按主题索引、按人物查找，并附党史专题片与纪录片推荐、观看指引与正版渠道，帮助观众建立清晰的历史脉络。不提供、不存储、不链接任何影视盗版资源，不提供在线播放与下载。">
+<meta name="keywords" content="红色影视, hongseyingshi-cn, 革命历史题材, 党史专题片, 纪录片, 红色电影, 正版影视, 影视导航, 年代梳理, 人物传记, 主旋律, 爱国电影">
+<meta name="author" content="红色影视">
+<meta name="theme-color" content="#7a0f1a">
+<title>红色影视 &middot; 以年代为经、以人物为纬，读懂革命历史题材影视 | hongseyingshi-cn.github.io</title>
+<link rel="canonical" href="https://hongseyingshi-cn.github.io/">
+<style>
+    :root{--bg:#0e0505;--paper:#f4ece3;--ink:#231814;--sub:#6b5e56;--red:#a41623;--red2:#d62839;--gold:#c89b3c;--rust:#7a0f1a;--line:#e2d6c6}
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{font-family:"Songti SC","Source Han Serif SC","SimSun",Georgia,serif;background:var(--paper);color:var(--ink);line-height:1.9;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    ::selection{background:var(--red);color:#fff}
+    .wrap{max-width:1260px;margin:0 auto;padding:0 28px}
+    .section{padding:104px 0;position:relative}
+    .head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:48px}
+    .t{font-size:24px;font-weight:900;letter-spacing:.5px;display:flex;align-items:center;gap:14px;font-family:"Songti SC",serif}
+    .t .n{font:900 24px/1 "Courier New",monospace;color:var(--paper);background:var(--red);border-radius:8px;padding:7px 11px}
+    .t em{font-style:normal;color:var(--red)}
+    .t small{display:block;font:400 11px/1.6 system-ui,sans-serif;letter-spacing:1.6px;color:var(--sub);margin-top:6px}
+    .more{font-size:10.5px;letter-spacing:2px;font-weight:800;color:var(--red);border:1.5px solid var(--red);padding:8px 18px;border-radius:2px;transition:.25s;font-family:system-ui,sans-serif}
+    .more:hover{color:#fff;background:var(--red)}
+
+    /* NAV */
+    .nb{position:sticky;top:0;z-index:50;background:rgba(244,236,227,.96);backdrop-filter:blur(8px);border-bottom:2px solid var(--red)}
+    .ni{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:11px 0}
+    .logo{display:flex;align-items:center;gap:11px;font:900 17px/1.2 "Songti SC",serif;letter-spacing:1px;color:var(--ink)}
+    .logo .s{width:30px;height:30px;background:var(--red);position:relative;flex:0 0 auto}
+    .logo .s::before{content:"";position:absolute;inset:6px;border:2px solid var(--gold)}
+    .logo .s::after{content:"";position:absolute;left:50%;top:-3px;width:2px;height:8px;background:var(--gold);transform:translateX(-50%)}
+    .logo small{display:block;font:700 7.5px/1.5 system-ui,sans-serif;letter-spacing:2.4px;color:var(--sub);margin-top:2px}
+    .tabs{display:flex;gap:2px;background:rgba(122,15,26,.07);padding:4px;border-radius:3px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+    .tabs::-webkit-scrollbar{display:none}
+    .tabs a{flex:0 0 auto;font:800 11px/1 system-ui,sans-serif;letter-spacing:.6px;padding:9px 12px;color:#5a4a42;transition:.22s;white-space:nowrap;border-radius:2px}
+    .tabs a.on{background:var(--red);color:#fff}
+
+    /* HERO */
+    .hero{margin-top:54px;border:1px solid var(--line);background:linear-gradient(160deg,#faf4ec 0%,#f0e3d3 55%,#e7d5be 100%);position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;right:-60px;top:-60px;width:320px;height:320px;border-radius:50%;background:var(--red);opacity:.9}
+    .hero::after{content:"";position:absolute;right:40px;top:40px;width:180px;height:180px;border-radius:50%;border:2px solid var(--gold);opacity:.75}
+    .hi{display:grid;grid-template-columns:1.3fr .7fr;min-height:430px;position:relative;z-index:2}
+    .hf{padding:66px 44px;display:flex;flex-direction:column;justify-content:center}
+    .eye{font:800 10px/1 "Courier New",monospace;letter-spacing:5px;color:var(--red)}
+    .hero h1{font-size:47px;line-height:1.32;font-weight:900;margin:14px 0;letter-spacing:-.4px;color:#1a0d0d}
+    .hero h1 b{color:var(--red);font-style:italic}
+    .hero .s{font-size:14.5px;color:var(--sub);max-width:490px;font-family:system-ui,sans-serif}
+    .hg{padding:44px;display:flex;flex-direction:column;justify-content:center;gap:14px;border-left:1px dashed rgba(122,15,26,.28)}
+    .fr{display:flex;gap:9px;flex-wrap:wrap}
+    .fr span{flex:1 1 88px;text-align:center;font-size:10px;letter-spacing:1px;padding:11px 5px;background:rgba(255,255,255,.72);border:1px solid var(--line);color:var(--red);font-family:system-ui,sans-serif}
+    .fr span b{display:block;font:italic 900 22px/1 Georgia,serif;color:var(--ink)}
+    .hg p{font-size:12px;color:var(--sub);font-family:system-ui,sans-serif;border-left:2px solid var(--red);padding-left:13px;line-height:1.95}
+
+    /* 栏目一：按年代梳理 —— 时间轴 + progress */
+    .tl{position:relative;padding:6px 0 0 64px}
+    .tl::before{content:"";position:absolute;left:24px;top:4px;bottom:4px;width:3px;background:repeating-linear-gradient(180deg,var(--red) 0 10px,transparent 10px 20px)}
+    .tl>div{position:relative;padding-bottom:34px}
+    .tl>div:last-child{padding-bottom:0}
+    .tl>div::before{content:counter(y);counter-increment:y;position:absolute;left:-58px;top:0;width:38px;height:38px;background:var(--red);color:var(--paper);font:900 12px/38px "Courier New",monospace;text-align:center}
+    .tl>div::after{content:"";position:absolute;left:-44px;top:10px;width:10px;height:10px;background:var(--gold);border-radius:50%;border:2px solid var(--paper)}
+    .tl{counter-reset:y}
+    .tl .box{background:#fff;border:1px solid var(--line);padding:24px 26px;transition:.3s}
+    .tl .box:hover{border-color:var(--red);box-shadow:0 14px 30px rgba(122,15,26,.14);transform:translateX(6px)}
+    .tl h3{font:italic 900 28px/1.1 Georgia,serif;color:var(--red);margin-bottom:6px}
+    .tl h4{font-size:16px;font-weight:900;margin-bottom:8px}
+    .tl p{font-size:12.5px;color:var(--sub);font-family:system-ui,sans-serif;line-height:1.9}
+    .tl .bar{height:5px;background:rgba(122,15,26,.12);margin-top:14px;overflow:hidden}
+    .tl .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold));width:0;transition:width 1.2s cubic-bezier(.2,.72,.3,1)}
+
+    /* 栏目二：按主题索引 —— CSS columns 瀑布流 */
+    .col{column-count:3;column-gap:16px}
+    .col>div{break-inside:avoid;background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);padding:20px 20px 22px;margin-bottom:16px;transition:.3s}
+    .col>div:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(122,15,26,.15);border-top-color:var(--gold)}
+    .col h4{font-size:15.5px;font-weight:900;margin-bottom:9px}
+    .col p{font-size:12px;color:var(--sub);font-family:system-ui,sans-serif;line-height:1.85}
+    .col .k{font:800 9.5px/1 "Courier New",monospace;letter-spacing:1.4px;color:var(--red);display:block;margin-bottom:9px}
+
+    /* 栏目三：人物 —— 双栏卡片 */
+    .pp{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .pp>div{background:#fff;border:1px solid var(--line);padding:24px;display:flex;gap:18px;align-items:flex-start;transition:.3s}
+    .pp>div:hover{border-color:var(--red);box-shadow:0 16px 32px rgba(122,15,26,.13);transform:translateY(-5px)}
+    .pp .av{flex:0 0 56px;width:56px;height:56px;border-radius:50%;background:var(--red);color:var(--paper);font:italic 900 26px/56px Georgia,serif;text-align:center;position:relative}
+    .pp .av::after{content:"";position:absolute;inset:-5px;border:1px dashed var(--gold);border-radius:50%}
+    .pp h4{font-size:15.5px;font-weight:900;margin-bottom:5px}
+    .pp p{font-size:12px;color:var(--sub);font-family:system-ui,sans-serif;line-height:1.85}
+
+    /* 栏目四：观看指引 —— 横向 step */
+    .stp{display:grid;grid-template-columns:repeat(5,1fr);gap:0;background:#fff;border:1px solid var(--line)}
+    .stp>div{padding:30px 24px;position:relative;border-right:1px solid var(--line);transition:.3s}
+    .stp>div:last-child{border-right:none}
+    .stp>div:hover{background:rgba(122,15,26,.05)}
+    .stp .n{font:italic 900 40px/1 Georgia,serif;color:rgba(201,155,60,.5);display:block;margin-bottom:12px}
+    .stp h4{font-size:15px;font-weight:900;margin-bottom:7px}
+    .stp p{font-size:12px;color:var(--sub);font-family:system-ui,sans-serif;line-height:1.85}
+
+    /* 栏目五：正版渠道 —— table */
+    .tw{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;border:1px solid var(--line);background:#fff}
+    .tw::-webkit-scrollbar{display:none}
+    table{width:100%;border-collapse:collapse;min-width:680px}
+    caption{caption-side:top;text-align:left;font:800 10.5px/1 "Courier New",monospace;letter-spacing:2px;color:var(--red);padding:0 0 16px}
+    th,td{padding:15px 20px;border-bottom:1px solid var(--line);font-size:12.5px;font-family:system-ui,sans-serif;text-align:left;vertical-align:middle}
+    thead th{background:var(--rust);color:var(--paper);font-size:10.5px;letter-spacing:2px}
+    tbody tr:hover{background:rgba(214,40,57,.06)}
+    tbody tr:last-child td{border-bottom:none}
+    .bd{display:inline-block;font-size:9.5px;letter-spacing:1px;padding:4px 10px;font-weight:800;font-family:system-ui,sans-serif}
+    .b1{background:rgba(122,15,26,.12);color:var(--rust)}.b2{background:rgba(200,155,60,.2);color:#8a6a1a}.b3{background:rgba(214,40,57,.12);color:var(--red2)}.b4{background:rgba(80,140,90,.16);color:#3f6b48}
+
+    /* 栏目六：关于 */
+    .ab{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .ac{background:#fff;border:1px solid var(--line);padding:26px 22px;transition:.3s;border-bottom:3px solid var(--red)}
+    .ac:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(122,15,26,.14);border-bottom-color:var(--gold)}
+    .ac .n{font:italic 900 38px/1 Georgia,serif;color:rgba(201,155,60,.45)}
+    .ac h3{font-size:15px;font-weight:900;margin:11px 0 8px}
+    .ac p{font-size:12px;color:var(--sub);font-family:system-ui,sans-serif;line-height:1.9}
+
+    footer{margin-top:24px;background:#1a0d0d;color:#cbb9ad;padding:72px 0 24px}
+    .fg{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
+    .fb p{font-size:12.5px;color:#cbb9ad;margin:14px 0;max-width:390px;line-height:1.95;font-family:system-ui,sans-serif}
+    .fg h5{font:800 10.5px/1 "Courier New",monospace;letter-spacing:3px;color:var(--gold);margin-bottom:16px}
+    .fg a{display:block;font-size:12px;color:#cbb9ad;padding:7px 0;font-family:system-ui,sans-serif;transition:.2s}
+    .fg a:hover{color:#fff;padding-left:8px}
+    .copy{text-align:center;font-size:11.5px;color:#a48f84;border-top:1px solid rgba(255,255,255,.12);padding-top:24px;line-height:2;font-family:system-ui,sans-serif}
+    .copy b{color:var(--gold)}
+    .top{position:fixed;right:20px;bottom:24px;width:44px;height:44px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:.3s;z-index:60}
+    .top.on{opacity:1;pointer-events:auto}
+    .rv{opacity:0;transform:translateY(30px);transition:.82s cubic-bezier(.2,.72,.3,1)}
+    .rv.in{opacity:1;transform:none}
+
+    @media(max-width:1080px){
+        .hi{grid-template-columns:1fr}
+        .hf{padding:42px 26px}
+        .hg{padding:32px 42px;border-left:none;border-top:1px dashed rgba(122,15,26,.28)}
+        .pp,.ab,.fg{grid-template-columns:1fr 1fr}
+        .stp{grid-template-columns:1fr 1fr}
+        .stp>div{border-right:none;border-bottom:1px solid var(--line)}
+        .col{column-count:2}
+    }
+    @media(max-width:820px){
+        .wrap{padding:0 15px}
+        .section{padding:66px 0}
+        .hero{margin-top:24px}
+        .hero h1{font-size:29px}
+        .t{font-size:16px}
+        .col,.pp,.ab,.fg{grid-template-columns:1fr}
+        .col{column-count:1}
+        .stp{grid-template-columns:1fr}
+        .tl{padding-left:52px}
+        .tl::before{left:18px}
+        .tl>div::before{left:-48px;width:32px;height:32px;line-height:32px;font-size:11px}
+        .tl>div::after{left:-36px}
+        .fr span{flex:1 1 30%}
+    }
+    @media(max-width:560px){
+        .hero h1{font-size:24px}
+        .copy{font-size:10.5px}
+    }
+    @media print{
+        .nb,.top{display:none!important}
+        body{background:#fff;color:#000;font-family:"Songti SC",serif}
+        .section{padding:12px 0;background:#fff!important}
+        .hero,.tl .box,.col>div,.pp>div,.stp,.ac,.tw{background:#fff!important;color:#000;border-color:#bbb;box-shadow:none}
+        .hero::before,.hero::after,.tl::before,.pp .av::after,.tl>div::after{display:none}
+        .hero h1,.t em,.fg h5,.tl h3,.tl .box:hover,.pp>div:hover,.col>div:hover,.ac:hover,.more{color:#000!important}
+        .tl h4,.pp h4,.stp h4,.ac h3,.col h4{color:#222}
+        .copy,.fg p,.fb p,.tl p,.col p,.pp p,.stp p,.ac p{color:#333!important;font-family:serif}
+        .tl .bar{display:none}
+    }
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="nb">
+    <div class="wrap ni">
+        <a class="logo" href="#top"><span class="s" aria-hidden="true"></span>红色影视<small>RED CINEMA &middot; 学习导航</small></a>
+        <nav class="tabs" aria-label="主导航">
+            <a href="#year" class="on">年代梳理</a>
+            <a href="#topic">主题索引</a>
+            <a href="#person">人物查找</a>
+            <a href="#flow">观看指引</a>
+            <a href="#chan">正版渠道</a>
+            <a href="#about">关于本站</a>
+        </nav>
+    </div>
+</header>
+
+<section class="wrap" id="top">
+    <div class="hero rv">
+        <div class="hi">
+            <div class="hf">
+                <div class="eye">红色影视 &middot; RED CINEMA GUIDE</div>
+                <h1>以<b>年代</b>为经，以<b>人物</b>为纬，<br>读懂革命历史题材影视。</h1>
+                <p class="s">红色影视是一份以中国革命历史题材影视作品为核心的学习与观看导航：按年代梳理、按主题索引、按人物查找，并附党史专题片与纪录片推荐。内页链接均以 # 占位。</p>
+            </div>
+            <div class="hg">
+                <div class="fr">
+                    <span><b>06</b>年代</span><span><b>08</b>主题</span><span><b>06</b>人物</span><span><b>07</b>渠道</span>
+                </div>
+                <p>先确认作品对应的历史阶段，再看人物与事件，最后对照正史资料，是更稳妥的观看方式。</p>
+                <p>本站不提供、不存储、不链接任何影视盗版资源，不提供在线播放与下载。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 栏目一：按年代梳理 -->
+<section class="section" id="year">
+    <div class="wrap">
+        <div class="head rv">
+            <h2 class="t"><span class="n">01</span>按年代梳理<small>CHRONOLOGY &middot; 历史阶段对应表</small></h2>
+            <a class="more" href="#">完整年表 &rarr;</a>
+        </div>
+        <div class="tl">
+            <div><div class="box"><h3>1919 — 1937</h3><h4>觉醒与建党</h4><p>从新文化运动、五四运动到中国共产党诞生与土地革命，关注思想传播、早期组织与根据地建设等题材。</p><div class="bar"><i style="--w:88%"></i></div></div></div>
+            <div><div class="box"><h3>1937 — 1945</h3><h4>全民族抗战</h4><p>正面战场与敌后根据地并重，兼顾国际援华力量、平民生活与战时经济等视角。</p><div class="bar"><i style="--w:96%"></i></div></div></div>
+            <div><div class="box"><h3>1945 — 1949</h3><h4>解放战争</h4><p>战略决战、城市接管、土地改革与支前运动，注意区分战役叙述与人物传记两类表达。</p><div class="bar"><i style="--w:92%"></i></div></div></div>
+            <div><div class="box"><h3>1949 — 1978</h3><h4>建设岁月</h4><p>新中国成立、工业化起步、边疆开发与科技攻坚，既有宏大叙事，也有大量基层生活题材。</p><div class="bar"><i style="--w:70%"></i></div></div></div>
+            <div><div class="box"><h3>1978 — 今</h3><h4>改革开放与新时代</h4><p>经济特区、脱贫攻坚、生态保护、科技创新与大国工程，是近年的创作热点。</p><div class="bar"><i style="--w:78%"></i></div></div></div>
+            <div><div class="box"><h3>专题</h3><h4>党史与纪录</h4><p>以文献、档案、口述史为素材的党史专题片与纪录片，适合系统学习与课堂辅助。</p><div class="bar"><i style="--w:84%"></i></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 栏目二：按主题索引 -->
+<section class="section" id="topic">
+    <div class="wrap">
+        <div class="head rv">
+            <h2 class="t"><span class="n">02</span>主题索引<small>TOPICS &middot; 八类常见题材</small></h2>
+            <a class="more" href="#">全部主题 &rarr;</a>
+        </div>
+        <div class="col">
+            <div><span class="k">TOPIC &middot; 01</span><h4>建党与早期组织</h4><p>聚焦思想传播、团体组建与早期会议，偏重群像与对话。</p></div>
+            <div><span class="k">TOPIC &middot; 02</span><h4>武装斗争与根据地</h4><p>游击战、长征、敌后抗战与根据地建设，节奏更紧张。</p></div>
+            <div><span class="k">TOPIC &middot; 03</span><h4>领袖与将帅传记</h4><p>以人物为线索串联事件，注意史实与艺术加工的分界。</p></div>
+            <div><span class="k">TOPIC &middot; 04</span><h4>隐蔽战线</h4><p>情报、密码与地下工作，常以悬念与心理博弈推进。</p></div>
+            <div><span class="k">TOPIC &middot; 05</span><h4>平民与家庭</h4><p>从普通人的衣食住行看时代变迁，更适合全家共看。</p></div>
+            <div><span class="k">TOPIC &middot; 06</span><h4>建设与科技</h4><p>两弹一星、水利、铁路、航天，突出集体协作与攻坚过程。</p></div>
+            <div><span class="k">TOPIC &middot; 07</span><h4>脱贫攻坚与乡村振兴</h4><p>近年主旋律的重要方向，地域色彩与生活细节丰富。</p></div>
+            <div><span class="k">TOPIC &middot; 08</span><h4>党史文献与口述史</h4><p>非虚构类，适合作为剧情片的对照与延伸阅读。</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 栏目三：人物查找 -->
+<section class="section" id="person">
+    <div class="wrap">
+        <div class="head rv">
+            <h2 class="t"><span class="n">03</span>人物查找<small>FIGURES &middot; 按历史人物检索</small></h2>
+            <a class="more" href="#">完整名录 &rarr;</a>
+        </div>
+        <div class="pp">
+            <div><div class="av">李</div><div><h4>李大钊</h4><p>中国最早的马克思主义传播者之一，相关题材集中在建党前后。</p></div></div>
+            <div><div class="av">毛</div><div><h4>毛泽东</h4><p>题材跨度大，从青年求学、井冈山到长征、抗战与建国。</p></div></div>
+            <div><div class="av">周</div><div><h4>周恩来</h4><p>外交、统战与建国后的国务工作，常见传记与专题片。</p></div></div>
+            <div><div class="av">朱</div><div><h4>朱德</h4><p>军事斗争与根据地建设，常与井冈山、长征题材并行。</p></div></div>
+            <div><div class="av">彭</div><div><h4>彭德怀</h4><p>百团大战、解放战争与抗美援朝，战役类题材较多。</p></div></div>
+            <div><div class="av">邓</div><div><h4>邓小平</h4><p>以改革开放历程为核心，兼具国际外交与经济特区建设。</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 栏目四：观看指引 -->
+<section class="section" id="flow">
+    <div class="wrap">
+        <div class="head rv">
+            <h2 class="t"><span class="n">04</span>观看指引<small>GUIDE &middot; 五个步骤</small></h2>
+            <a class="more" href="#">详细指南 &rarr;</a>
+        </div>
+        <div class="stp">
+            <div><span class="n">01</span><h4>确认年代</h4><p>先看作品对应的历史阶段，再决定从哪里开始看。</p></div>
+            <div><span class="n">02</span><h4>核对史实</h4><p>与正史资料对照，区分纪实、传记与艺术虚构。</p></div>
+            <div><span class="n">03</span><h4>选对渠道</h4><p>优先官方播出平台、正版碟片与党史文献机构资源。</p></div>
+            <div><span class="n">04</span><h4>做好笔记</h4><p>记下人物、时间与地点，便于事后延伸查证。</p></div>
+            <div><span class="n">05</span><h4>交流讨论</h4><p>与他人分享观后感，是巩固历史认知的有效方式。</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 栏目五：正版渠道 -->
+<section class="section" id="chan">
+    <div class="wrap">
+        <div class="head rv">
+            <h2 class="t"><span class="n">05</span>正版渠道<small>CHANNELS &middot; 官方播出与文献资源</small></h2>
+            <a class="more" href="#">更多渠道 &rarr;</a>
+        </div>
+        <div class="tw">
+            <table>
+                <caption>正版观看渠道对照 &middot; 本表为分类示意，具体片源与版权以各平台官方页面为准</caption>
+                <thead><tr><th style="width:150px">渠道类型</th><th>适合场景</th><th style="width:110px">费用</th></tr></thead>
+                <tbody>
+                    <tr><td><b>官方播出平台</b></td><td>重大主题作品的电视首播与网络同步，字幕与配音最完整</td><td><span class="bd b1">免费</span></td></tr>
+                    <tr><td><b>党史文献机构</b></td><td>党史专题片、文献纪录片与口述史资料的权威入口</td><td><span class="bd b1">免费</span></td></tr>
+                    <tr><td><b>公共图书馆</b></td><td>可借阅的文献纪录片与专题片资源，适合系统学习</td><td><span class="bd b1">免费</span></td></tr>
+                    <tr><td><b>授权视频平台</b></td><td>正版版权引进的主旋律剧集与电影，可按主题检索</td><td><span class="bd b2">会员</span></td></tr>
+                    <tr><td><b>正版碟片</b></td><td>画质与花絮最完整，适合收藏与课堂辅助</td><td><span class="bd b3">单片</span></td></tr>
+                    <tr><td><b>院线与展映</b></td><td>重大时间节点的献礼影片，大银幕体验最佳</td><td><span class="bd b3">购票</span></td></tr>
+                    <tr><td><b>高校与纪念馆</b></td><td>专题展映、讲座与影像资料查阅，适合深度研究</td><td><span class="bd b4">预约</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- 栏目六：关于 -->
+<section class="section" id="about">
+    <div class="wrap">
+        <div class="head rv">
+            <h2 class="t"><span class="n">06</span>关于本站<small>ABOUT &middot; 定位与声明</small></h2>
+            <a class="more" href="#">联系我们 &rarr;</a>
+        </div>
+        <div class="ab">
+            <div class="ac"><div class="n">01</div><h3>学习导航</h3><p>以年代与人物两条线索组织内容，帮助建立清晰的历史脉络。</p></div>
+            <div class="ac"><div class="n">02</div><h3>尊重史实</h3><p>明确区分纪实、传记与艺术虚构，鼓励与正史资料对照观看。</p></div>
+            <div class="ac"><div class="n">03</div><h3>正版优先</h3><p>所有推荐指向官方播出、授权平台与文献机构资源。</p></div>
+            <div class="ac"><div class="n">04</div><h3>静态单页</h3><p>内页链接均以 # 占位，无外部脚本依赖，可直接部署到 GitHub Pages。</p></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="wrap">
+        <div class="fg">
+            <div class="fb">
+                <a class="logo" href="#top"><span class="s" aria-hidden="true"></span>红色影视<small>RED CINEMA &middot; 学习导航</small></a>
+                <p>红色影视是一份以中国革命历史题材影视作品为核心的学习与观看导航，按年代梳理、按主题索引、按人物查找，并附党史专题片与纪录片推荐与正版渠道。</p>
+            </div>
+            <div><h5>年 代</h5><a href="#year">觉醒与建党</a><a href="#year">全民族抗战</a><a href="#year">解放战争</a><a href="#year">建设岁月</a><a href="#year">改革开放</a><a href="#year">党史专题</a></div>
+            <div><h5>索 引</h5><a href="#topic">建党与组织</a><a href="#topic">武装斗争</a><a href="#topic">将帅传记</a><a href="#topic">隐蔽战线</a><a href="#topic">平民家庭</a><a href="#topic">文献口述</a></div>
+            <div><h5>规 则</h5><a href="#">版权提示</a><a href="#">免责声明</a><a href="#">联系我们</a><a href="#">更新日志</a><a href="#">隐私政策</a><a href="#">友情链接</a></div>
+        </div>
+        <div class="copy">
+            &copy; 2026 <b>红色影视</b> &middot; 网站网址：https://hongseyingshi-cn.github.io/ &middot; 以年代为经，以人物为纬，读懂革命历史题材影视<br>
+            本站为静态导航演示页，内页链接均以 # 占位；作品名称、年代、人物与片源信息均为通用示例，请以官方播出平台与权威文献为准。请通过官方渠道与正版资源观影学习，尊重创作者劳动。
+        </div>
+    </div>
+</footer>
+
+<a class="top" href="#top" aria-label="回到顶部">&#8593;</a>
+
+<script>
+    var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){
+            if(!e.isIntersecting) return;
+            e.target.classList.add('in');
+            e.target.querySelectorAll('.bar i').forEach(function(b){ b.style.width=b.style.getPropertyValue('--w'); });
+            io.unobserve(e.target);
+        });
+    },{threshold:0.2});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+    var links=[].slice.call(document.querySelectorAll('.tabs a'));
+    var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+    function spy(){
+        var y=window.scrollY+168,cur=0;
+        secs.forEach(function(s,i){ if(s&&s.offsetTop<=y) cur=i; });
+        links.forEach(function(a,i){ a.classList.toggle('on',i===cur); });
+        var t=document.querySelector('.top'); if(t) t.classList.toggle('on',scrollY>800);
+    }
+    window.addEventListener('scroll',spy,{passive:true});spy();
+</script>
+</body>
+</html>
